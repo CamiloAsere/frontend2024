@@ -1,0 +1,112 @@
+/*
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #4b7cee;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: left;
+  
+}
+th {
+  background-color:#121826;
+  color: white;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+td:first-child,
+th:first-child {
+  border-left: none;
+}
+
+td:last-child,
+th:last-child {
+  border-right: none;
+}
+
+@media screen and (max-width: 600px) {
+  .table {
+    border: 0;
+  }
+ 
+  thead {
+    display: none;
+  }
+
+  tr {
+    border-bottom: 2px solid #ddd;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  td {
+    border: none;
+    display: block;
+    font-size: 14px;
+    text-align: right;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+} 
+
+.editButton {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  white-space: nowrap;
+}
+.table button {
+  margin-left: 0.5rem;
+}
+.table button:hover{
+box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+} 
+*/
+.highlight{
+  background-color: blueviolet;
+   color: rgb(148, 14, 14);
+   margin: 0 ;
+   padding: 0;
+   
+ }
+ .highlight:hover{
+   background-color: blanchedalmond;
+ }
+ 
+ .questionColumn {
+  min-width: 100px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ 
+}

@@ -1,0 +1,13 @@
+/* *{ margin: 0 } */
+header{
+  position:relative; 
+  width: 100%;
+  z-index: 1;
+  
+} 
+section {
+ /* min-height: 92vh; */
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}

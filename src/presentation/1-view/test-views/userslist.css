@@ -1,0 +1,51 @@
+.editButton {
+  background-color:#322c2d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.deleteButton {
+    background-color:  #c8001a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .buttonContainer {
+    white-space: nowrap;
+  }
+
+/* styles.css */
+.welcome-card {
+    width: 12rem;
+    padding: 10px;
+    position: fixed; /* Hace que la tarjeta de bienvenida tenga una posición fija */
+    top: 6rem; /* Alinea la tarjeta de bienvenida con la parte superior de la pantalla */
+    left: 1rem; /* Alinea la tarjeta de bienvenida con el lado izquierdo de la pantalla */
+    z-index: 1; /* Asegura que la tarjeta de bienvenida se muestre por encima de otros elementos */
+    /* background-color: rgba(255, 255, 255, 0.8);    */
+    background: rgb(229, 128, 21);  /* El fondo de la tarjeta de bienvenida es blanco y semi-transparente */
+    backdrop-filter: blur(23px);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    transition: transform .2s;
+    /*
+    opacity: 0;**/ /* Inicialmente, la tarjeta de bienvenida es completamente transparente */
+    /* transition: opacity 2s; */ /* La tarjeta de bienvenida se volverá completamente opaca en 2 segundos */
+
+  }
+  .welcome-card.show {
+    opacity: 1; /* Cuando se añade la clase 'show', la tarjeta de bienvenida se vuelve completamente opaca */
+  }
+  
+  .welcome-card:hover {
+    transform: scale(1.1);
+  }
+  .users-table{
+    position: fixed;
+    top: 5rem;
+    left: 15rem;
+  }
+

@@ -1,0 +1,42 @@
+.cajax{
+    border: 7px dotted #000;
+    border-radius: 100%;
+    transition: all 3s ease;
+    margin-left: 20px;
+ }
+ .cajax:hover {
+    transform:rotate(180deg);
+}
+
+
+
+.testClass{
+    display:block;
+    position: relative;
+    border: 7px dotted #000;
+    border-radius: 100%;
+    transition: all 3s ease;
+    width: auto;
+    animation: mov 5s infinite ;
+    transform:  rotate(10deg);
+    margin-left: 25rem;
+    z-index: 1;
+    display:block;
+    position: relative;
+}
+/*
+.testClassImg
+{ 
+    transform:  rotate(10deg);
+    z-index: 1;
+    display:block;
+    position: relative;
+   
+    width: 100px;
+    height: 100px;
+    background: #ebecf0;
+    box-shadow:-4px -4px 12px rgb(255, 255, 255), 4px 4px 12px rgba(121, 130, 160, 0.747);
+    border-radius: 30px;
+    
+}
+*/

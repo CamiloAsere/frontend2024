@@ -1,0 +1,11 @@
+/* Header.module.css */
+.home-menu {
+    padding: 0.5em;
+    text-align: left;
+    background: white;
+  }
+  
+  .home-menu ul {
+    float: right;
+  }
+  

@@ -1,0 +1,57 @@
+:root{
+  --primary404bg-color:#35a961;
+  --secondary404bg-bolor:#121826;
+}
+.commonBg{
+  height: calc(105vh - 2rem);
+  text-align: center;
+}
+.fondo {
+    background-color: var(--primary404bg-color);
+    height: calc(105vh - 2rem);
+    text-align: center;
+  }
+.testbg {
+    background-color: var(--secondary404bg-color);
+    height: calc(105vh - 2rem);
+    text-align: center;
+}
+.pageErrorStyles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .codeErrorStyles {
+    font-size: 5rem;
+    font-weight: bold ;
+    font-style: italic;
+    font-family: sans-serif;
+  }
+  
+  .msgErrorStyles {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    font-family: sans-serif;
+    box-sizing: border-box; 
+    
+  }
+  
+  .gifErrorStyles {
+    margin: 1rem auto;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+ code{
+  font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
+ }
+ /*
+ *{    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
