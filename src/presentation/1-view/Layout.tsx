@@ -1,6 +1,6 @@
 //Layout.ytsx
 import { ReactNode } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import { useAuthStore } from "../../store/store";
 import styled, { keyframes } from 'styled-components';
 import Navbar from "./components/Navbar";
@@ -50,7 +50,7 @@ const ContentContainer = styled.div`
 const Layout: React.FC<LayoutProps> = () => {
   const errorMessage = useAuthStore((state) => state.errorMessage);
   const user= useAuthStore((state) => state.user);
-  
+  const navigate=useNavigation()
   return (
     <LayoutContainer>
       <header>
@@ -62,7 +62,9 @@ const Layout: React.FC<LayoutProps> = () => {
       <main>
      
         <section>
-        
+        { navigate.state==='loading' && (
+          <div style={{color:'white'}} className="alert alert-danger my-5">loading...</div>
+        ) }
         <Outlet/>
         </section>
       

@@ -14,11 +14,14 @@ import { AuthFormSweet } from './data/dataPlan/AlertModal';
 import UsersPage1 from './presentation/1-view/test-views/UsersTable3';
 import Profile from './data/cucuota-frontend/Profile';
 import AddUser from './presentation/1-view/test-views/loginA/SignUp';
+import Astro from './presentation/1-view/test-views/Astro';
+import Tester from './presentation/1-view/pages/Tester';
 
 
 
-type Route = {
-  path: string;
+export type Route = {
+  index?: boolean,
+  path?: string;
   element: JSX.Element;
   errorElement?: JSX.Element;
   children?: Route[];
@@ -31,19 +34,29 @@ const router: Route[] = [
   element:<Layout/>,
   errorElement: <NotFound />,
   children: [
-    { path: '/', element: <HomePage />},
-    { path: '/login', element: <LoginPage /> },
-    { path: '/signup', element: <SignUpPageWithAuth /> },
-    { path: '/admin', element: <AdminPanelWithAuth /> },
-    { path: '/protected',  element: <UserDetailsWithAuth /> },
-    { path: '/users', element: <MyApp /> },
+    //{ path: '/', element: <HomePage />},
+    { index: true , element: <HomePage />},
+    { path: 'login', element: <LoginPage /> },
+    { path: 'signup', element: <SignUpPageWithAuth /> },
+    { path: 'admin', element: <AdminPanelWithAuth /> },
+    { path: 'protected',  element: <UserDetailsWithAuth /> },
+    { path: 'users', element: <MyApp /> },
     // { path: '/strapi', element: <StrapiApp /> },
-    { path: '/sweet2', element: <AuthFormSweet /> },
+    { path: 'sweet2', element: <AuthFormSweet /> },
     //{ path: '/api', element: <UsersPage1 /> },
-    { path: '/test', element: <Profile/> },
-    { path: '/profile', element: <Profile/> },
+    { path: 'test', element: <Profile/> },
+    { path: 'profile', element: <Profile/> },
+    { 
+      path: 'astro', element: <Astro/> ,
+      
+      children:[
+        { path: 'chi', element: <Tester /> },
+      ]
+      
+  },
   ],
-} 
+},
+{ path: '/superuser', element: <AddUser/> },
 ]
 
 const router1=createBrowserRouter(router)
@@ -54,3 +67,16 @@ function App() {
 }
 
 export default App;
+//nota : crear un objeto dpara guardar cada ruta para ser mapeada y ahorrar codigo.
+/*
+{
+routes.map(({ path,component:Component })=>(
+<Route
+key={ path }
+path={ path }
+element={ <Component/> }
+/>
+)
+)
+}
+*/
